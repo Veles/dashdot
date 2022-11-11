@@ -22,7 +22,7 @@ services:
       - traefik.http.routers.dash.rule=Host(`dash.derunix.ru`)
       - traefik.http.routers.dash.entrypoints=websecure
       - traefik.http.routers.dash.tls.certresolver=myresolver
-      - traefik.http.services.dash.loadbalancer.server.port=3000
+      - traefik.http.services.dash.loadbalancer.server.port=3001
     ports:
       - 3000:3000 # view
       - 3001:3001 # api
